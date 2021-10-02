@@ -1,0 +1,17 @@
+.column {
+    float: left;
+    width: 50%;
+  }
+.container {
+    position: relative;
+    font-family: Arial;
+  }
+  
+.text-block {
+    position: absolute;
+    bottom: 300px;
+    right: 320px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
