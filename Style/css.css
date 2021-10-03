@@ -26,7 +26,29 @@
   filter: brightness(80%);
 }
 
+#i11{
+  height: 200px;
+  width: 400px;
+  border-radius: 10px;
+}
 
+
+.row{
+  margin-left: 50px;
+  margin-right: 0px;  
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+.homesetting{
+  background-color:#3D3D3D;
+}
+.banner-text{
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  color: yellow;
+  padding: 10px;
+}
 
 @media(min-width: 992px) {
 
