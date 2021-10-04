@@ -37,7 +37,7 @@
 					<div class="info form-group">
 						Your goal weight is : <input type="text" id="number" class="form-control" const packageName = require('packageName');>
 					</div>
-					<button class="btn btn-success" value="submit">Submit</button> &nbsp;&nbsp;&nbsp;
+					<button class="btn btn-success" value="submit" onclick="function">Submit</button> &nbsp;&nbsp;&nbsp;
 					<button class="btn btn-danger" value="reset">Reset</button>
 				</div>
 			</form>
@@ -50,6 +50,9 @@
 		output.innerHTML = slider.value;
 		slider.oninput = function () {
 			output.innerHTML = this.value;
+			if (this.value<15) {
+				window.alert('You are under age!');
+			}
 		}
 	</script>
 </body>
