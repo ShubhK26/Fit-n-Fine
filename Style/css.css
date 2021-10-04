@@ -47,7 +47,10 @@
   margin-left: 370px;
   margin-top: 100px;
 }
-
+.homesetting{
+  margin-top: 100px;
+  height: auto;
+}
 .slider {
   -webkit-appearance: none;
   width: 40%;

@@ -5,44 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" href="../Assets/logo/logo.jpg">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="../Assets/logo/logo.jpg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../Style/java.js"></script>
     <link rel="stylesheet" href="/Fit-n-Fine/Style/css.css">
     <title>Fit-n-Fine</title>
 </head>
 
 <body style="background-color:#3D3D3D;">
+    <nav class="navbar navbar-expand-md bg-warning navbar-dark fixed-top"
+        style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
+
+        <a class="navbar-brand font-weight-bold" href="#">Fit-n-Fine</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto usetting">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Membership</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
     <section class="homesetting">
-        <nav class="navbar navbar-expand-md bg-warning navbar-dark"
-            style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
-            
-            <a class="navbar-brand" href="#">Fit-n-Fine</a>
-
-            
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Membership</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-8 col-sm-10 col-10 d-block m-auto" style="float: left;">
@@ -51,7 +48,7 @@
                             src="https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-william-choquette-1954524.jpg&fm=jpg">
                         <div class="banner-text">
                             <b>
-                                <h4>Beginner</h4>
+                                <h4 onclick="func();">Beginner</h4>
                             </b>
                         </div>
                     </div>
@@ -84,21 +81,16 @@
                 <div class=" col-lg-6 col-md-8 col-sm-10 col-10 d-block m-auto" style="float: right;">
                     <div class="banner-card">
                         <img id="i11"
-                        src="https://images.pexels.com/photos/949128/pexels-photo-949128.jpeg?cs=srgb&dl=pexels-victor-freitas-949128.jpg&fm=jpg">
+                            src="https://images.pexels.com/photos/949128/pexels-photo-949128.jpeg?cs=srgb&dl=pexels-victor-freitas-949128.jpg&fm=jpg">
                         <div class="banner-text">
                             <b>
-                                <h4>Basic Workout</h4>
+                                <h4">Basic Workout</h4>
                             </b>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
     </section>
 </body>
 
