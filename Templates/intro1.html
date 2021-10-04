@@ -4,6 +4,7 @@
 	<title>Fit-n-Fine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../Style/css.css">
+	<link rel="icon" href="../Assets/logo/logo.jpg">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -51,7 +52,12 @@
 		slider.oninput = function () {
 			output.innerHTML = this.value;
 			if (this.value<15) {
-				window.alert('You are under age!');
+				if (confirm('You are underage. Do you want to continue?')) {
+					
+				} else{
+					slider.value=18
+					output.innerHTML=18
+				}
 			}
 		}
 	</script>
