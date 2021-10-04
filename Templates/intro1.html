@@ -1,0 +1,57 @@
+<html>
+
+<head>
+	<title>Fit-n-Fine</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../Style/css.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="logo">
+		<img src="../Assets/logo/logo.jpg" width="150" height="140">
+		<center><h4>Fit-n-Fine workout</h4>
+		<h6>Stay healthy stay effective</h6></center>
+		<br><br>
+	</div>
+	<div class="row">
+		<div class="col-lg-7 col-md-7 col-sm-10 col-10 d-block m-auto">
+			<form action="Home.html">
+				Please select your age
+				<div class="form-group slidercontainer"><input type="range" min="10" max="90" value="18" class="slider" id="myRange">
+				</div>
+
+				<p>
+				Your age is : <span id="demo"></span>
+				</p>
+				<div>
+					<div class="info form-group">
+						Please enter your height in cm : <input type="number" id="height" class="form-control" required>
+					</div>
+					<div class="info form-group">
+						Please enter your weight in kg : <input type="number" id="weight" class="form-control" required>
+					</div>
+					<div class="info form-group">
+						Your goal weight is : <input type="text" id="number" class="form-control" const packageName = require('packageName');>
+					</div>
+					<button class="btn btn-success" value="submit">Submit</button> &nbsp;&nbsp;&nbsp;
+					<button class="btn btn-danger" value="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+		slider.oninput = function () {
+			output.innerHTML = this.value;
+		}
+	</script>
+</body>
+
+</html>

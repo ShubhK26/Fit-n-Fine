@@ -50,7 +50,7 @@
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
+  width: 40%;
   height: 10px;
   background: #d3d3d3;
   outline: none;
@@ -58,13 +58,10 @@
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
-.logo{
-  margin-top: 20px;
-  margin-left: 80px;
-}
 .slider:hover {
   opacity: 1;
 }
+<<<<<<< HEAD
 .info{
   margin-top: 50px;
 }
@@ -103,12 +100,14 @@
   color: yellow;
   padding: 10px;
 =======
+=======
+>>>>>>> 7f966d46711fd771002b3d9fabdabacabc395faa
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
   width: 25px;
   height: 12px;
-  background: #000000;
+  background: blue;
   cursor: pointer;
 }
 
