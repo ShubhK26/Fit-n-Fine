@@ -38,7 +38,7 @@
   height: 600px;
 }
 .imagee{
-  width: 685px;
+  width: 690px;
   height: 600px;
   filter: brightness(80%);
 }
@@ -47,7 +47,10 @@
   margin-left: 370px;
   margin-top: 100px;
 }
-
+.homesetting{
+  margin-top: 100px;
+  height: auto;
+}
 .slider {
   -webkit-appearance: none;
   width: 40%;
@@ -77,6 +80,7 @@
 }
 
 
+
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -94,6 +98,7 @@
 
 }
 
+
 #i11{
   height: 200px;
   width: 400px;
@@ -107,6 +112,7 @@
   margin-top: 50px;
 }
 
+
 .homesetting{
   background-color:#3D3D3D;
 }
@@ -117,7 +123,24 @@
   left: 25%;
   color: yellow;
   padding: 10px;
+
 }
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 12px;
+  background: blue;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 12px;
+  background: #000000;
+  cursor: pointer;
+}
+
 
 @media(min-width: 992px) {
 
