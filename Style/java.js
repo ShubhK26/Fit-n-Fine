@@ -1,7 +1,4 @@
 
-function Functions() {
-    let bmii=myFunction();
-}
 function myFunction() {
     var height = parseInt(document.querySelector('#height').value);
     var weight = parseFloat(document.querySelector('#weight').value);
@@ -24,6 +21,9 @@ function myFunction() {
         else if (bmi > 30) {
             alert('Obese Weight. BMI:' + bmi);
         }
-        return bmi;
+        localStorage.setItem("key",bmi);
     }
 }
+
+let bmii=localStorage.getItem("key");
+alert(bmii);
