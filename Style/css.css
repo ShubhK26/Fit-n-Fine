@@ -38,8 +38,8 @@
   height: 600px;
 }
 .imagee{
-  width: 690px;
-  height: 600px;
+  width: 780px;
+  height: 650px;
   filter: brightness(80%);
 }
 .slidecontainer {
@@ -48,8 +48,9 @@
   margin-top: 100px;
 }
 .homesetting{
-  margin-top: 100px;
+  margin-top: 70px;
   height: auto;
+  margin-right: 1000px;
 }
 .slider {
   -webkit-appearance: none;
@@ -100,27 +101,19 @@
 
 
 #i11{
-  height: 200px;
-  width: 400px;
+  height: 450px;
+  width: 1100px;
   border-radius: 10px;
 }
 
-.row{
-  margin-left: 50px;
-  margin-right: 0px;  
-  margin-bottom: 10px;
-  margin-top: 50px;
-}
-
-
-.homesetting{
-  background-color:#3D3D3D;
+.banner-card{
+  padding: 30px;
 }
 
 .banner-text{
   position: absolute;
   top: 75%;
-  left: 25%;
+  left: 215%;
   color: yellow;
   padding: 10px;
 
