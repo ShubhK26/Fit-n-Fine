@@ -6,6 +6,9 @@
     position: relative;
     font-family: Arial;
   }
+.option{
+  margin-top: 0px;;
+}
   .block {
     display: block;
     width: 30%;
@@ -38,7 +41,7 @@
   height: 600px;
 }
 .imagee{
-  width: 690px;
+  width: 680px;
   height: 600px;
   filter: brightness(80%);
 }
