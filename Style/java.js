@@ -24,6 +24,3 @@ function myFunction() {
         localStorage.setItem("key",bmi);
     }
 }
-
-let bmii=localStorage.getItem("key");
-alert(bmii);

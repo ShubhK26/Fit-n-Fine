@@ -41,14 +41,15 @@
   height: 600px;
 }
 .imagee{
-<<<<<<< HEAD
   width: 680px;
   height: 600px;
-=======
   width: 780px;
   height: 650px;
->>>>>>> b3c9a72bc1edb14c905eaa50db5c3684431ec634
   filter: brightness(80%);
+}
+.imgset{
+  float: right;
+  width: 30%
 }
 .slidecontainer {
   width: 50%;
