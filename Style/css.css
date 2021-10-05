@@ -41,8 +41,13 @@
   height: 600px;
 }
 .imagee{
+<<<<<<< HEAD
   width: 680px;
   height: 600px;
+=======
+  width: 780px;
+  height: 650px;
+>>>>>>> b3c9a72bc1edb14c905eaa50db5c3684431ec634
   filter: brightness(80%);
 }
 .slidecontainer {
@@ -53,6 +58,7 @@
 .homesetting{
   margin-top: 100px;
   height: auto;
+  
 }
 .slider {
   -webkit-appearance: none;
@@ -103,27 +109,21 @@
 
 
 #i11{
-  height: 200px;
-  width: 400px;
+  height: 450px;
+  width: 1100px;
   border-radius: 10px;
+  box-shadow: 0 0 20px white ;
 }
 
-.row{
-  margin-left: 50px;
-  margin-right: 0px;  
-  margin-bottom: 10px;
-  margin-top: 50px;
-}
-
-
-.homesetting{
-  background-color:#3D3D3D;
+.banner-card{
+  padding: 30px;
+  
 }
 
 .banner-text{
   position: absolute;
   top: 75%;
-  left: 25%;
+  left: 300%;
   color: yellow;
   padding: 10px;
 
@@ -142,6 +142,19 @@
   height: 12px;
   background: #000000;
   cursor: pointer;
+}
+
+.card{
+	padding: 30px 50px 30px;
+	margin-top: 30px;
+	box-shadow: 0 2px 2px 0 yellow, 0 2px 15px yellow;
+  padding-left: 60px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+.ulsettings{
+  margin-left: 350px;
 }
 
 
