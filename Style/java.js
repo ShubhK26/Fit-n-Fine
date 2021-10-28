@@ -1,6 +1,6 @@
 
 function myFunction() {
-    var height = parseInt(document.querySelector('#height').value);
+    var height = parseFloat(document.querySelector('#height').value);
     var weight = parseFloat(document.querySelector('#weight').value);
     if (height === "" || isNaN(height))
         alert('Invalid height');
@@ -21,6 +21,6 @@ function myFunction() {
         else if (bmi > 30) {
             alert('Obese Weight. BMI:' + bmi);
         }
-        localStorage.setItem("key",bmi);
+        localStorage.setItem("key", bmi);
     }
 }

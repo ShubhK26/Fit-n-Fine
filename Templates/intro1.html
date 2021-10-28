@@ -24,10 +24,10 @@
 		</div>
 		<div class="row" style="float: left; width: 60%;">
 			<div class="col-lg-12 col-md-12 col-sm-10 col-10 d-block m-auto">
-				<form action="Home.html">
+				<form action="../php/connections.php" method="post">
 					Please select your age
 					<div class="form-group slidercontainer"><input type="range" min="10" max="90" value="18" class="slider"
-							id="myRange">
+							id="myRange" name="age">
 					</div>
 
 					<p>
@@ -35,15 +35,20 @@
 					</p>
 					<div>
 						<div class="info form-group">
-							Please enter your height in cm : <input type="number" id="height" class="form-control" required>
+							Enter username : <input type="text" id="usrname" class="form-control" name="username" required>
 						</div>
 						<div class="info form-group">
-							Please enter your weight in kg : <input type="number" id="weight" class="form-control" required>
+							Password : <input type="password" id="passwd" class="form-control" name="Password" required>
+						</div>
+						<div class="info form-group">
+							Please enter your height in cm : <input type="number" id="height" class="form-control" name="height" required>
+						</div>
+						<div class="info form-group">
+							Please enter your weight in kg : <input type="number" id="weight" class="form-control" name="weight" required>
 						</div>
 						<button class="btn btn-success" value="submit" onclick="myFunction();">Submit</button>
 						&nbsp;&nbsp;&nbsp;
 						<button class="btn btn-danger" value="reset">Reset</button>
-						
 					</div>
 				</form>
 			</div>
@@ -67,6 +72,9 @@
 			output.innerHTML = this.value;
 		}
 	</script>
+	<?php
+		include('connections.php');
+	?>
 </body>
 
 </html>
