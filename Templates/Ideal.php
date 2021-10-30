@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+    include('Home.php');
+?>
 <html lang="en">
 
 <head>

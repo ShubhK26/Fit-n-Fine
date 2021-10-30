@@ -1,4 +1,6 @@
-<script src="../Style/java.js"></script>
+<?php
+$msg2 = "";
+?>
 <?php
 session_start();
 //Establishing connection to database
@@ -10,6 +12,7 @@ $msg = "";
 $conn = mysqli_connect($servername, $username, $password, $database);
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	$usrnm = $_POST["username"];
+	$_SESSION["usernm"]=$usrnm;
 	$passwd = $_POST["Password"];
 	$age = $_POST["age"];
 	$height = $_POST["height"];
@@ -28,27 +31,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$sql->execute();
 			if ($bmi < 18.5) {
 				echo "<script>alert('You are Under Weight. BMI:' + $bmi)
-				window.location='Home.html'
-			</script>";
+					window.location='underweight.php'
+				</script>";
 			} else if ($bmi >= 18.5 && $bmi < 24.9) {
 				echo "<script>alert('You have Ideal Weight. BMI:' + $bmi)
-				window.location='Home.html'
-			</script>";
+					window.location='Ideal.php'
+				</script>";
 			} else if ($bmi > 25 && $bmi < 29.9) {
 				echo "<script>alert('You are Over Weight. BMI:' + $bmi)
-				window.location='Home.html'
-			</script>";
-			} else if ($bm > 30) {
+					window.location='overweight.php'
+				</script>";
+			} else if ($bmi > 30) {
 				echo "<script>alert('You have Obessed Weight. BMI:' + $bmi)
-				window.location='Home.html'
-			</script>";
+					window.location='obessed.php'
+				</script>";
 			}
-			$_SESSION['username'] = $usrnm;
 		}
 	}
 }
 ?>
-<html>
 
 <head>
 	<title>Fit-n-Fine</title>
@@ -60,67 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="../Style/java.js"></script>
-	<style>
-		/*Trigger Button*/
-		.login-trigger {
-			padding: 15px 30px;
-			border-radius: 30px;
-			position: relative;
-			top: 50%;
-		}
 
-		/*Modal*/
-		h4 {
-			font-weight: bold;
-			color: #fff;
-		}
-
-		.close {
-			color: #fff;
-			transform: scale(1.2)
-		}
-
-		.modal-content {
-			font-weight: bold;
-			background: linear-gradient(to bottom right, rgb(250, 200, 200), rgb(100, 110, 150));
-		}
-
-		.username,
-		.password {
-			border: none;
-			border-radius: 0;
-			box-shadow: none;
-			border-bottom: 2px solid #eee;
-			padding-left: 0;
-			font-weight: normal;
-			background: transparent;
-		}
-
-		.form-control::-webkit-input-placeholder {
-			color: #505050;
-		}
-
-		.form-control:focus::-webkit-input-placeholder {
-			font-weight: bold;
-			color: #707070;
-		}
-
-		.login {
-			padding: 6px 20px;
-			border-radius: 20px;
-			background: none;
-			border: 2px solid #FAB87F;
-			color: #505050;
-			font-weight: bold;
-			transition: all .5s;
-			margin-top: 1em;
-		}
-
-		.login:hover {
-			background: #FAB87F;
-			color: #fff;
-		}
-	</style>
 </head>
 
 <body style="background-color: floralwhite;">
@@ -135,23 +76,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		</div>
 		<div class="row" style="float: left; width: 60%;">
 			<div class="col-lg-12 col-md-12 col-sm-10 col-10 d-block m-auto">
-				<a class="login-trigger" href="#" data-target="#login" data-toggle="modal">Already have a account?</a>
-				<div id="login" class="modal fade" role="dialog">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-body">
-								<button data-dismiss="modal" class="close">&times;</button>
-								<h4>Login</h4>
-								<form>
-									<input type="text" name="username" class="username form-control" placeholder="Username" />
-									<input type="password" name="password" class="password form-control" placeholder="password" />
-									<input class="btn login" type="submit" value="Login" />
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<br><br>
+				<a href="form.php">Already have a account?</a <br><br>
 				<form action="" method="post">
 					Please select your age
 					<div class="form-group slidercontainer"><input type="range" min="10" max="90" value="18" class="slider" id="myRange" name="age">

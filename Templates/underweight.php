@@ -16,6 +16,9 @@
 </head>
 
 <body style="background-color:#3D3D3D;">
+    <?php
+        include("Home.php");
+     ?>
     <section class="homesetting">
         <div class="container">
             <h2 class="text-center text-white">Excercises and Diet for gaining weight</h2>

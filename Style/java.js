@@ -9,7 +9,6 @@ function myFunction() {
         alert('Invalid weight');
     else {
         let bmi = (weight / ((height / 100) * (height / 100))).toFixed(2);
-        localStorage.setItem("key", bmi);
     }
 }
 
