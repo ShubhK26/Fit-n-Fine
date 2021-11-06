@@ -22,13 +22,13 @@
     <nav class="navbar navbar-expand-md bg-warning navbar-dark fixed-top ml-auto"
         style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
 
-        <a class="navbar-brand font-weight-bold" href="#">Fit-n-Fine</a>
+        <a class="navbar-brand font-weight-bold" href="#" style="color: #3D3D3D;">Fit-n-Fine</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-               <a href="#" class="nav-link" style="color: whitesmoke;"> Hello, <?php $userdis=$_SESSION["usernm"]; echo "$userdis"; ?></a>
+               <a href="#" class="nav-link" style="color: #3D3D3D; font-weight: bold;"> Hello, <?php $userdis=$_SESSION["usernm"]; echo "$userdis"; ?></a>
             </li>
         </ul>
     </nav>
