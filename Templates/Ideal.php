@@ -3,7 +3,6 @@
     include('Home.php');
 ?>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
     <link rel="stylesheet" href="../Style/css.css">
     <title>Fit-n-Fine</title>
 </head>
-
 <body style="background-color:#3D3D3D;">
     <section class="homesetting">
         <div class="container">
@@ -38,16 +36,11 @@
                         <li>Heel touch(20)</li>
                         <li>Tricep dips(10)</li>
                         <li>Squats(12)</li>
-
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </section>
-
-
-
 </body>
-
 </html>

@@ -3,7 +3,6 @@
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
     <link rel="stylesheet" href="../Style/css.css">
     <title>Fit-n-Fine</title>
 </head>
-
 <body style="background-color:#3D3D3D;">
     <nav class="navbar navbar-expand-md bg-warning navbar-dark fixed-top ml-auto"
         style="border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;">
@@ -32,7 +30,5 @@
             </li>
         </ul>
     </nav>
-
 </body>
-
 </html>

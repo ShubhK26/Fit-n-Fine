@@ -39,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     }
   }
 }
-
 ?>
 <html>
 
@@ -129,7 +128,6 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     }
   </style>
 </head>
-
 <body>
   <div class="container">
     <div class="row">
@@ -139,18 +137,14 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
             <div class="imgcontainer">
               <img src="../Assets/logo/avatar.jpg" alt="Avatar" class="avatar">
             </div>
-
             <div class="container">
               <label for="uname"><b>Username</b></label>
               <input type="text" placeholder="Enter Username" name="users" required>
-
               <label for="psw"><b>Password</b></label>
               <input type="password" placeholder="Enter Password" name="passwords" required>
-
               <button type="submit">Login</button>
               <div id="loginerror"><?php echo "$msg2"; $msg2="";?></div>
             </div>
-
             <div class="container" style="background-color:#f1f1f1">
               <button type="button" class="cancelbtn" onclick="goBack()">Cancel</button>
             </div>
@@ -165,5 +159,4 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     window.history.back();
   }
 </script>
-
 </html>

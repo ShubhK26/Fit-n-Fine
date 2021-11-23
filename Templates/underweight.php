@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../Style/css.css">
     <title>Fit-n-Fine</title>
 </head>
-
 <body style="background-color:#3D3D3D;">
     <?php
         include("Home.php");
@@ -53,7 +52,6 @@
                     </div>
                 </div>
             </div>
-
             <div>
                 <div class="card">
                     <h3 class="text-center">Rigorously</h3>
@@ -73,9 +71,7 @@
                                 <li>Squats(14)</li>
                                 <li>Calf strech right and left(30 sec)</li>
                             </ul>
-
                             <p>Note: Do not perform running excercises while gaining your weight</p>
-
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-block m-auto">
                             <p>Goal=3500-4000 kcal</p>
@@ -91,8 +87,6 @@
                     </div>
                 </div>
             </div>
-
-
             <div>
                 <div class="card">
                     <h3 class="text-center">Routine Workout</h3>
@@ -109,16 +103,11 @@
                         <li>Heel touch(20)</li>
                         <li>Tricep dips(10)</li>
                         <li>Squats(12)</li>
-
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </section>
-
-
-
 </body>
-
 </html>
