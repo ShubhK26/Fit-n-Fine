@@ -42,7 +42,7 @@
                         <p>Note: Do not perform running excercises while gaining your weight</p>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-block m-auto">
-                        <p>Goal=3000-3500 kcal</p>
+                        <p>Goal=2500-3000 kcal</p>
                         <ul>
                             <li>Any fruit juice</li>
                             <li>1 banana</li>
@@ -78,7 +78,7 @@
 
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 col-12 d-block m-auto">
-                            <p>Goal=3500-4000 kcal</p>
+                            <p>Goal=3000-3500 kcal</p>
                             <ul>
                                 <li>2 bananas</li>
                                 <li>1 boiled egg</li>
