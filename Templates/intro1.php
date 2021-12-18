@@ -50,7 +50,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	}
 }
 ?>
-
 <head>
 	<title>Fit-n-Fine</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -61,9 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<script src="../Style/java.js"></script>
-
 </head>
-
 <body style="background-color: floralwhite;">
 	<img src="../Assets/logo/logo.jpg" width="150" height="140">
 	<div class="container introset">
@@ -81,7 +78,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 					Please select your age
 					<div class="form-group slidercontainer"><input type="range" min="10" max="90" value="18" class="slider" id="myRange" name="age">
 					</div>
-
 					<p>
 						Your age is : <span id="demo"></span>
 					</p>
@@ -104,7 +100,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 						<button class="btn btn-danger" value="reset">Reset</button>
 					</div>
 				</form>
-
 			</div>
 		</div>
 		<div class="imgset">
@@ -118,7 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			</marquee>
 		</div>
 	</div>
-
 	<script>
 		var slider = document.getElementById("myRange");
 		var output = document.getElementById("demo");
@@ -128,5 +122,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}
 	</script>
 </body>
-
 </html>
